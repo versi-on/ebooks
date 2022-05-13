@@ -1,0 +1,24 @@
+<%- include('partials/header'); -%>
+  <main class="main-page">
+    <h2>all books</h2>
+    <ul class="book-list">
+      <% for(i=0;i<books.length;i++){ %>
+        <li class="book">
+          <h3>
+            <%= books[i].title %>
+          </h3>
+          <img src="<%=books[i].cover.substring(12) %>" alt="<%= books[i].title %>" width="270">
+          <div class="book-info">
+            <p class="descr">
+              <%= books[i].description %>
+            </p>
+            <p class="info">
+              <%= books[i].year %> by <%= books[i].author %>
+            </p>
+          </div>
+          <a href="<%=books[i].path.substring(12) %>" class="btn btn-read">read book</a>
+        </li>
+        <% } %>
+    </ul>
+  </main>
+  <%- include('partials/footer'); -%>

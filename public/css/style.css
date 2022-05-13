@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff4e6;
+    color: rgb(59, 58, 58);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    padding: 0.5rem 1rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: #3ea490;
+    font-weight: bold;
+}
+
+.logo span {
+    align-self: flex-end;
+    font-weight: bold;
+    color: #3ea490;
+}
+
+/* FORM */
+form {
+    width: 360px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: 1px 2px 3px rgba(0,0,0,0.1); */
+    background: rgb(253, 253, 250);
+}
+
+form h2 {
+    font-size: 2.4em;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: rgb(253, 253, 250);
+}
+
+input:focus,
+input:active {
+    border: 2px solid #3ea490;
+    outline: none;
+}
+
+label {
+    display: block;
+    margin: 20px 0 10px;
+}
+
+button {
+    margin-top: 30px;
+    border-radius: 36px;
+    background: #eeba55;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    display: block;
+    padding: 10px 16px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #46da83;
+}
+
+.btn {
+    border-radius: 36px;
+    background: #e3af52;
+    color: #000;
+    letter-spacing: 0.03em;
+}
+
+.btn-auth {
+    background: #fcc3b9;
+}
+
+/* MSG */
+.msg {
+    margin: 0.5rem 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success {
+    color: #2fc06b;
+}
+
+.error {
+    color: #d3747b;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img {
+    margin-right: 2rem;
+    /* width: 100%; */
+}
+
+header h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    color: rgb(59, 58, 58);
+}
+
+header .btn {
+    margin-top: 20px;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+/* MAIN */
+.main-page {
+    min-height: 80vh;
+}
+
+.main-txt {
+    width: 19rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+.headings h1 {
+    font-size: 2.2em;
+    padding-bottom: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: auto;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.footer-bottom {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+/* responsive */
+@media only screen and (max-width: 990px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav li {
+        margin-left: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .headings {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        align-self: center;
+        margin: 1rem auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        margin-bottom: 3rem;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    .book {
+        width: auto !important;
+    }
+
+    form {
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+
+    .main-page,
+    header {
+        min-height: 75.5vh;
+    }
+}
